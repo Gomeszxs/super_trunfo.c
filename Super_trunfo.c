@@ -11,6 +11,9 @@ int main() {
     float AreaemKm2 = 83900;
     float PIB = 16300000000;
     int NumerodePontosTuristicos = 7;
+    float DensidadePopulacional = Populacao / AreaemKm2;
+    float PIBPerCapita = PIB / Populacao;
+
 
     printf("Qual Nome do Estado: \n");
     scanf("%s", Estado);
@@ -35,7 +38,10 @@ int main() {
     
     printf(" - Estado: %s\n - Código da Carta: %s\n - Nome da Cidade: %s\n", Estado, CodigodaCarta, NomedaCidade);
     printf(" - População: %d\n - Área em km²: %.2f\n - PIB: %.2f\n - Número de pontos turísticos: %d\n", Populacao, AreaemKm2, PIB, NumerodePontosTuristicos);
- 
+    printf(" - Densidade Populacional: %.2f - Pib Per Capita: %.2f\n", DensidadePopulacional, PIBPerCapita);
+
+
+
 //Carta 2 - Estado: Bahia - Cidade: Salvador
 
 
@@ -46,6 +52,8 @@ int main() {
     float AreaemKm22 = 693;
     float PIB2 = 62900000000;
     int NumerodePontosTuristicos2 = 15;
+    float DensidadePopulacional2 = Populacao2 / AreaemKm22;
+    float PIBPerCapita2 = PIB2 / Populacao2;
 
     printf("Qual Nome do Estado2: \n");
     scanf("%s", Estado2);
@@ -67,10 +75,12 @@ int main() {
     
     printf("Qual o número de pontos turísticos2: \n");
     scanf("%d", &NumerodePontosTuristicos2);
+
     
     printf(" - Estado 2: %s\n - Código da Carta 2: %s\n - Nome da Cidade 2: %s\n", Estado2, CodigodaCarta2, NomedaCidade2);
     printf(" - População 2: %d\n - Área em km² 2: %.2f\n - PIB: %.2f\n - Número de pontos turísticos 2: %d\n", Populacao2, AreaemKm22, PIB2, NumerodePontosTuristicos2);
-    
+    printf(" - Densidade Populacional: %.2f - Pib Per Capita: %.2f\n", DensidadePopulacional2, PIBPerCapita2);
+
     return 0;
 
 
