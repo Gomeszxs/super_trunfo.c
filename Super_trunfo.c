@@ -130,7 +130,86 @@ int main() {
     { printf("PIB Per Capita da carta 1 venceu !!!\n"); }
     else
     { printf("PIB Per Capita da carta 2 venceu !!!\n"); }
+     
+    int escolha;
     
+    printf("***BATALHA DE ATRIBUTOS\n");
+    printf("Escolha o atributo para comparar:\n");
+    printf("1. População\n"); 
+    printf("2. Área em km²\n");
+    printf("3. PIB\n"); 
+    printf("4. Número de pontos turísticos\n");
+    printf("5. Densidade Populacional\n");
+    printf("6. PIB Per Capita\n");
+    printf("Digite o número da sua escolha: ");
+    scanf("%d", &escolha);
+
+    switch (escolha)
+    {
+    case 1:
+        printf("População de RioVerde x População de Salvador\n");
+        if (Populacao > Populacao2)
+        printf("População de RioVerde venceu!!!");
+     else if (Populacao < Populacao2)
+        printf("População de Salvador venceu!!!");
+        else
+        printf("EMPATE NA POPULAÇÃO\n");
+    break;
+
+    case 2:
+        printf("Aréa de RioVerde x Área de Salvador\n");
+        if (AreaemKm2 > AreaemKm22)
+        printf("Área de RioVerde venceu!!!\n");
+        else if (AreaemKm2 < AreaemKm22)
+        printf("Área de Salvador venceu!!!\n");
+        else
+        printf("EMPATE NA ÁREA\n");
+    break;
+    
+    case 3:
+        printf("PIB de RioVerde x PIB de Salvador\n");
+        if (PIB > PIB2)
+        printf("PIB de RioVerde venceu!!!");
+        else if (PIB < PIB2)
+        printf("PIB de Salvador venceu!!!");
+        else
+        printf("EMPATE NO PIB\n");
+    break;
+    case 4:
+        printf("Número de pontos turísticos de RioVerde x Número de pontos turísticos de Salvador\n");
+        if (NumerodePontosTuristicos > NumerodePontosTuristicos2)
+        printf("Número de pontos turísticos de RioVerde venceu!!!\n");
+        else if (NumerodePontosTuristicos < NumerodePontosTuristicos2)
+        printf("Número de pontos turísticos de Salvador venceu!!!\n");
+        else
+        printf("EMPATE NO NÚMERO DE PONTOS TURÍSTICOS\n");
+break;
+
+    case 5:
+        printf("Densidade Populacional de RioVerde x Densidade Populacional de Salvador\n");
+        if (DensidadePopulacional > DensidadePopulacional2)
+        printf("Densidade Populacional de RioVerde venceu!!!\n");
+        else if (DensidadePopulacional < DensidadePopulacional2)
+        printf("Densidade Populacional de Salvador venceu!!!\n");
+        else
+        printf("EMPATE NA DENSIDADE POPULACIONAL\n");
+break;
+    case 6:
+        printf("PIB Per Capita de RioVerde x PIB Per Capita de Salvador\n");
+        if (PIBPerCapita > PIBPerCapita2)
+        printf("PIB Per Capita de RioVerde venceu!!!\n");
+        else if (PIBPerCapita < PIBPerCapita2)
+        printf("PIB Per Capita de Salvador venceu!!!\n");
+        else
+        printf("EMPATE NO PIB PER CAPITA\n");
+break;
+    default:
+        printf("Escolha inválida!\n");
+break;
+    }
 
     return 0;
 }
+
+
+
