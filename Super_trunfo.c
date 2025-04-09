@@ -133,7 +133,7 @@ int main() {
      
     int escolha;
     
-    printf("***BATALHA DE ATRIBUTOS\n");
+    printf("***BATALHA DE ATRIBUTOS***\n");
     printf("Escolha o atributo para comparar:\n");
     printf("1. População\n"); 
     printf("2. Área em km²\n");
