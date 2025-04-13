@@ -133,7 +133,7 @@ int main() {
      
     int escolha;
     
-    printf("***BATALHA DE ATRIBUTOS***\n");
+    printf("BATALHA DE ATRIBUTOS\n");
     printf("Escolha o atributo para comparar:\n");
     printf("1. População\n"); 
     printf("2. Área em km²\n");
@@ -141,6 +141,7 @@ int main() {
     printf("4. Número de pontos turísticos\n");
     printf("5. Densidade Populacional\n");
     printf("6. PIB Per Capita\n");
+    
     printf("Digite o número da sua escolha: ");
     scanf("%d", &escolha);
 
@@ -208,8 +209,5 @@ break;
 break;
     }
 
-    return 0;
+    return 0 ;
 }
-
-
-
